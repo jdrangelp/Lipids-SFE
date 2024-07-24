@@ -29,6 +29,6 @@ Juan David Rangel Pinto¹*, Jose L. Guerrero², Lorena Rivera³, María Paula Pa
 Corresponding Authors:
 jd.rangel10@uniandes.edu.co; andgonza@uniandes.edu.co
 
-#Cite us!
+# Cite us!
 
 The paper will be submitted soon.

@@ -6,17 +6,17 @@ Product and Process Design Group, Department of Chemical and Food Engineering, U
 
 # Introduction
 
-This is a set of six machine learning regression models to predict the lipid profile of supercritical extracts from a microalgae (Galdieria sp. USBA-GBX-832) varying the conditions of temperature, pressure and cosolvent flow (ethanol). The regression models are Lasso, Support Vector Regressor, Gaussian Regression, Random Forest, XG Boost and ANN.
+This study presents six machine learning regression models designed to predict the lipid profile of supercritical extracts from the microalgae Galdieria sp. USBA-GBX-832, varying conditions of temperature, pressure, and cosolvent flow (ethanol). The regression models used are Lasso, Support Vector Regressor, Gaussian Regression, Random Forest, XGBoost, and ANN.
 
-These models were built on may 2024 using the outcomes from the lipidomic characterization analysis of 12 supercritical extracts (through RP-LC-ESI(+/-)-QTOF-MS).
+These models were built in May 2024 using the outcomes from the lipidomic characterization analysis of 12 supercritical extracts obtained through RP-LC-ESI(+/-)-QTOF-MS.
 
-The input data is the defined extraction conditions: temperature (in °C), pressure (in bar) and ethanol flow (in mL/min), and the chemical structures in isomeric SMILES format. The output is the lipid recovery in Log[g lipid/ g biomass].
+The input data consist of defined extraction conditions: temperature (°C), pressure (bar), and ethanol flow (mL/min), along with the chemical structures in isomeric SMILES format. The output is the lipid recovery in Log[g lipid/g biomass].
 
-There is an optional input variable, the infinite dilution activity coefficient (IDAC) of the lipid calculated at the conditions of temperature and ethanol mole fraction. This variable was calculated using the thermodynamic software, JCOSMO, developed by LVPP from UFRGS, Brazil.
+An optional input variable is the infinite dilution activity coefficient (IDAC) of the lipid, calculated at the given temperature and ethanol mole fraction. This variable was computed using the thermodynamic software JCOSMO, developed by LVPP from UFRGS, Brazil.
 
-There is an intermediate step for obtaining the chemical structures of lipids without the highest identification level in the lipidomic analysis. It uses the reported structures with the same shorthand notation, then it is calculated the RD-Kit molecular descriptors and using an unsupervised learning method is selected the representative lipid. The structures fully described are used as the input by the models.
+An intermediate step is used to obtain the chemical structures of lipids that do not have the highest identification level in the lipidomic analysis. This step involves using reported structures with the same shorthand notation, calculating RDKit molecular descriptors, and selecting the representative lipid using an unsupervised learning method. The fully described structures are then used as input for the models.
 
-The methodology propused for building the models is restricted for predicting the lipid profile of the microalgae Galdieria sp. USBA-GBX-832, but researchers could follow this steps for predicting the lipid profiles of their biological samples used in SFE and reduce the cost and time needed to identify the optimal extraction conditions, whether to achieve the highest extraction yield or to optimize the recovery of specific lipids or lipid groups.
+The methodology proposed for building these models is specifically for predicting the lipid profile of Galdieria sp. USBA-GBX-832. However, researchers can follow these steps to predict the lipid profiles of their biological samples used in SFE, thereby reducing the cost and time needed to identify optimal extraction conditions, whether to achieve the highest extraction yield or to optimize the recovery of specific lipids or lipid groups.
 
 # Authors
 
